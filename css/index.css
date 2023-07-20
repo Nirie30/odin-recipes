@@ -1,65 +1,57 @@
 
 /* Index CSS*/
 
-.icon {   
-    display: block;
-    height: auto;
-    position:absolute; top: 20px; right: 1080px;
-    width: 45px;
-}
-
 body {
     background-color: #f3f3f3;
 }
 
-.text-icon {
-    display: block;
-    font-size: 15px;
-    position:absolute; top: 15px; right: 960px;
+.container-icon {
+    border: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
 }
 
-.smaller-text-icon {
-    font-size: 10px;
-    position:absolute; top: 35px; right: 985px;
+.icon {   
+    width: 45px;
+}
+
+.text-icon {
+    font-size: 15px;
 }
 
 .index-img {
-    display: block;
+    display: flex;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
 }
 
-.container-main {
-    margin-top: 80px;
-        
+.container-icon {
+    border: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
 }
 
-.text-block {
-    background-color: #f3f3f3;
-    font-size: 2vw;
-    height: auto;
-    line-height: 5px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: -80px;    
-    padding: 5px;
-    position: relative;
-    text-align: center;    
+.container-recipe-images {
+    border: 1px solid red;
+    display: flex;
+    height: 500px;
+    width: auto;
+    flex-direction: row;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
-.text-block .slogan {
-    font-size: 1.5vw;
+.index-chicken {
+    margin-right: 2%;
 }
 
-.index-asian {    
-    width: 30%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;  
+.index-pork {
+    margin-right: 2%;
 }
-
 .block-asian {
     background-color: red;
     margin-left: 20px;
@@ -71,5 +63,5 @@ body {
 
 .link-asian {
     text-decoration: none;
+    color: black;
 }
-
