@@ -1,67 +1,71 @@
-
-/* Index CSS*/
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #f3f3f3;
 }
 
 .container-icon {
-    border: none;
+    align-items: center;
     display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    gap: 1em;
+    justify-content: center;   
 }
 
-.icon {   
-    width: 45px;
+.icon {
+    max-width: 5%;
+    min-width: 4%;
 }
 
 .text-icon {
-    font-size: 15px;
+    font-size: 1.5vw;
+}
+
+.index-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;   
+    position: relative; 
 }
 
 .index-img {
-    display: flex;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+    margin: 1em 2em -4em 2em;
+    max-width: 140%;
+    min-width: 100%;
 }
 
-.container-icon {
-    border: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-}
+.title {    
+    background-color: #f3f3f3;   
+    font-size: 2vw;
+    line-height: 3.5vw;        
+    margin-top: 43%;
+    position: absolute; 
+    text-align: center;
+    width: 45%;      
+  }
 
-.container-recipe-images {
+  .slogan {    
+    background-color: #f3f3f3;   
+    font-size: 1.5vw;
+    line-height: 3Vw;        
+    margin-top: 48%;
+    position: absolute; 
+    text-align: center;
+    width: 45%;      
+  }
+
+  .links-container {
     border: 1px solid red;
-    display: flex;
-    height: 500px;
-    width: auto;
-    flex-direction: row;
-    padding-left: 70px;
-    padding-right: 70px;
-}
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    padding-top: 5%;
+  }
 
-.index-chicken {
-    margin-right: 2%;
-}
-
-.index-pork {
-    margin-right: 2%;
-}
-.block-asian {
-    background-color: red;
-    margin-left: 20px;
-    margin-right: 500px;
-    margin-top: 40px;    
-    padding: 7px;   
-    text-align: center;      
-}
-
-.link-asian {
-    text-decoration: none;
-    color: black;
-}
+  
