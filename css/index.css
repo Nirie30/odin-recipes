@@ -26,46 +26,78 @@ body {
     font-size: 1.5vw;
 }
 
-.index-container {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;   
-    position: relative; 
-}
-
-.index-img {
-    margin: 1em 2em -4em 2em;
-    max-width: 140%;
+.image-container {
+    display: grid;  
+    position:relative;
+    justify-content: center;      
+    margin-left: 1em;
+    margin-right: 1em;      
+    margin-bottom: 0.5em;
+ } 
+ 
+ .index-img {  
+    max-width: 100%;
     min-width: 100%;
-}
+    
+}   
+ .title {   
+  background-color: chocolate;
+  color: white;
+  font-size: 2vw;
+  line-height: 180%;
+  text-align: center;  
+  width: 100%;  
+ }
 
-.title {    
-    background-color: #f3f3f3;   
-    font-size: 2vw;
-    line-height: 3.5vw;        
-    margin-top: 43%;
-    position: absolute; 
-    text-align: center;
-    width: 45%;      
+  .links-container {    
+    display: grid;   
+    gap: 1em;    
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;   
+    margin-left: 1em;
+    margin-right: 1em;
+   
   }
-
-  .slogan {    
-    background-color: #f3f3f3;   
-    font-size: 1.5vw;
-    line-height: 3Vw;        
-    margin-top: 48%;
-    position: absolute; 
-    text-align: center;
-    width: 45%;      
-  }
-
-  .links-container {
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(3 ,1fr);
-    padding-top: 5%;
-  }
-
   
+  .link-chicken,
+  .link-pork,
+  .link-burger {
+    color: black;
+    content: "";
+    display: inline-block;
+    font-weight:800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5vw;    
+    line-height: 2em;
+    text-align: center; 
+    text-decoration: none;  
+    width: 100%;
+  }
+
+  .link-chicken {
+    background-color: #F4ECC2;
+  }
+
+  .link-pork {
+  background-color:#FFCF99;
+  }
+
+  .link-burger {
+    background-color: #FFB045;
+  }
+
+  .container-recipe-img {
+    display: grid;   
+    gap: 1em;    
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .index-chicken,
+  .index-pork,
+  .index-burger {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
