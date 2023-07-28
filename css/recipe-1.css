@@ -5,5 +5,129 @@
 }
 
 body {
-    background-color: lightcoral
+    background-color: #f3f3f3;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.img-chicken {
+    height: 800px;
+    object-fit: cover;
+    padding: 2em;
+    width: 35%;
+}
+
+.title,
+.description,
+.prep,
+.recipe-1,
+.return-buttons {
+    background-color: white;    
+}
+
+.title,
+.description,
+.ingredients,
+.ing-steps,
+.return-buttons {
+    text-align: center;
+}
+
+.title {    
+    line-height: 1.5em;
+    margin: -10em 0 0 8em;        
+    position: relative;    
+    width: 40%;
+}
+
+.description {    
+    font-style: italic;
+    justify-content: center;
+    margin: 0 0 0 16em;    
+    padding-bottom: .5em;
+    position: relative;         
+    width: 40%;
+}
+
+.prep-info {
+    margin-top: 15em;
+   
+}
+.prep {    
+    display: flex;
+    flex-direction: row;        
+    justify-content: space-evenly;
+    margin: 0em 2em 0 2em;
+    padding: .5em;
+}
+
+.divider {    
+    border-bottom: 1px solid black;
+    margin: 0em 3.5em;    
+}
+
+.recipe-1 {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0em 2em 0em 2em;
+    padding: 0 2em;
+}
+
+.servings {
+    font-weight: 600;
+    padding: 1em 5em 0 4.5em;   
+}
+
+.serv-time {    
+    padding: 0.5em 3.5em;
+}
+
+.ingredients {
+    line-height: 2em;
+    padding-right: 3em;
+}
+
+.unordered-ingrdts {
+    list-style: none;
+}
+
+.ing-steps {
+    padding-left: 1em;
+}
+
+.ordered-ingrdts {    
+    line-height: 1.5em;
+    margin: 1em 0 2em 0;    
+    padding-right: 1em;
+}
+
+.list-item {
+    padding-left: 0.5em;
+}
+
+.return-buttons {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;     
+    margin: 0 2em;
+    padding: 0.8em 3em 0.8em 0.8em; 
+}
+
+.top,
+.home {
+    color: black;
+    font-weight: 900;    
+    text-decoration: none;
+}
+
+.home {
+    padding-left: 6em;
+}
+
+footer {
+    padding-bottom: 1em;
 }
